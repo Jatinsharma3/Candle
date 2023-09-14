@@ -1,0 +1,89 @@
+html{
+  height: 100%;
+  width: 100%;
+}
+html { font-size: 11px;}
+      body { background: black;}
+      .center {
+         width: 100px;
+         margin: 2px auto 2px;
+      }
+      .stand {
+         position: relative;
+         margin: 11rem auto 0;
+         width: 130px;
+         height: 400px;
+      }
+      .wax {
+         bottom: 0;
+         top: 0;
+         left: 47%;
+         width: 180px;
+         height: 270px;
+         border-radius: 150px / 40px;
+         box-shadow: inset 10px -40px 20px 10px rgba(0, 0.3, 0.7, 0.3), inset -50px 0 60px 10px rgba(0, 1.0, 2.5, 0.7);
+         background: #190f02;
+         background: linear-gradient(#e47825, #ee8e0e, #633c73, #4c7a03 30%, #1c0960);
+      }
+      .flutter {
+         width: 60px;
+         height: 90px;
+         left: 53%;
+         top: 35rem;
+         bottom: 100%;
+         position: absolute;
+         transform: translate(-40%);
+         border-radius: 50%;
+         background: #ff6100;
+         filter: blur(40px);
+         animation: flutter 0.2s infinite;
+      }
+      @keyframes flutter {
+         40% {opacity: 0.6;}
+      }
+      .candlewick {
+         width: 10px;
+         height: 46px;
+         position: absolute;
+         top: 45rem;
+         left: 55%;
+         z-index: 1;
+         border-radius: 30% 30% 10% 5%;
+         transform: translate(-50%);
+         background: #131312;
+         background: linear-gradient(#d6894a, #4b532c, #131312, brown, #e8cb31 70%);
+      }
+      .blaze {
+         width: 30px;
+         height: 110px;
+         left: 55%;
+         top: 34rem;
+         position: absolute;
+         transform-origin: 52% 120%;
+         transform: translate(-40%);
+         border-radius: 51% 55% 22% 20%;
+         background: rgba(254, 254, 254, 1);
+         background: linear-gradient(white 70%, transparent);
+         animation: blaze1 5s linear infinite, blaze2 6s linear infinite;
+      }
+      @keyframes blaze2 {
+         0% {transform: translate(-40%) rotate(-3deg);}
+         50% {transform: translate(-40%) rotate(3deg);}
+         100% {transform: translate(-40%) rotate(-3deg);}
+      }
+      @keyframes blaze1 {
+         0%, 100% {height: 138px;}
+         50% {height: 158px;}
+         100% {height: 138px; }
+      }
+      .blue {
+         width: 30px;
+         height: 70px;
+         position: absolute;
+         border-radius: 51% 51% 45% 45%;
+         left: 55%;
+         top: 42rem;
+         transform: translate(-40%);
+         background: rgba(1, 123, 253, .6);
+         box-shadow: 1px -30px 40px 1px #dc8a0c, 1px 40px 50px 1px #dc8a0c, inset 4px 1px 5px 1px rgba(1, 123, 253, .7), inset -2px 1px 3px 1px rgba(1, 123, 253, .7);
+      }
